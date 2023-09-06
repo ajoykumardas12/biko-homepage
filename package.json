@@ -1,0 +1,24 @@
+{
+  "name": "biko-homepage",
+  "version": "1.0.0",
+  "description": "biko homepage using scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajoykumardas12/biko-homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajoykumardas12/biko-homepage/issues"
+  },
+  "homepage": "https://github.com/ajoykumardas12/biko-homepage#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.66.1"
+  }
+}
