@@ -57,7 +57,8 @@ ul {
   --light: #f1f1f1;
   --light-gray: #bbbbbb;
   --dark-gray: #414141;
-  --grey-black: #212121;
+  --gray-black: #212121;
+  --testimonial-bg: #141415;
 }
 
 :root {
@@ -102,8 +103,9 @@ ul {
 .hero-section .hero-texts .hero-para .hero-cta-button {
   flex-grow: 0;
   margin: auto 3rem auto auto;
+  font-size: 0.95rem;
   color: var(--light-gray);
-  background: var(--dark-gray);
+  background: var(--gray-black);
 }
 
 header {
@@ -184,4 +186,95 @@ header ul li {
   background-image: url("../../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");
   background-size: cover;
   background-position: center;
+}
+
+.testimonials-section {
+  background: var(--dark);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.testimonials-section .testimonials-top {
+  padding: 7rem 3rem 20rem;
+  background-image: url("../../assets/images/josh-nuttall-XVTWFHcNIko-unsplash.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials-section .testimonials-top .testimonials-heading {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--white);
+}
+.testimonials-section .testimonials-top p {
+  margin-top: 2.5rem;
+  max-width: 24rem;
+  text-align: center;
+  color: var(--light-gray);
+}
+.testimonials-section .testimonials-top .button-testimonials {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--light-gray);
+  background: var(--gray-black);
+  outline: 1px solid var(--dark-gray);
+}
+.testimonials-section .testimonials {
+  padding: 0 3rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+.testimonials-section .testimonials .testimonial {
+  background: var(--testimonial-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+}
+.testimonials-section .testimonials .testimonial .testimonial-heading {
+  display: flex;
+  gap: 0.8rem;
+}
+.testimonials-section .testimonials .testimonial .testimonial-heading img {
+  width: 3rem;
+  aspect-ratio: 1;
+}
+.testimonials-section .testimonials .testimonial .testimonial-heading .testimonial-attestant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.testimonials-section .testimonials .testimonial .testimonial-heading .testimonial-attestant .attestant-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.testimonials-section .testimonials .testimonial .testimonial-heading .testimonial-attestant div {
+  font-size: 0.8rem;
+}
+.testimonials-section .testimonials .testimonial .review {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.testimonials-section .testimonials .testimonial .social-icons {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+.testimonials-section .testimonials .testimonial .social-icons img {
+  width: 1.4rem;
+  aspect-ratio: 1.05;
+  cursor: pointer;
+}
+.testimonials-section .testimonials .testimonial-2 {
+  grid-row: span 2;
+}
+.testimonials-section .testimonials .testimonial-2 .testimonial-heading .testimonial-attestant div {
+  font-size: 0.9rem;
+  font-family: var(--font-heading);
 }

@@ -1,0 +1,103 @@
+.testimonials-section {
+  background: var(--dark);
+  border-radius: 2rem;
+  overflow: hidden;
+
+  .testimonials-top {
+    padding: 7rem 3rem 20rem;
+    background-image: url("../../assets/images/josh-nuttall-XVTWFHcNIko-unsplash.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .testimonials-heading {
+      font-size: 4rem;
+      font-weight: 400;
+      color: var(--white);
+    }
+    p {
+      margin-top: 2.5rem;
+      max-width: 24rem;
+      text-align: center;
+      color: var(--light-gray);
+    }
+    .button-testimonials {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--light-gray);
+      background: var(--gray-black);
+      outline: 1px solid var(--dark-gray);
+    }
+  }
+  .testimonials {
+    padding: 0 3rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+
+    .testimonial {
+      background: var(--testimonial-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      color: var(--light-gray);
+      display: flex;
+      flex-direction: column;
+
+      .testimonial-heading {
+        display: flex;
+        gap: 0.8rem;
+
+        img {
+          width: 3rem;
+          aspect-ratio: 1;
+        }
+
+        .testimonial-attestant {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 0.1rem;
+
+          .attestant-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+          div {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .review {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+      .social-icons {
+        margin-top: auto;
+        display: flex;
+        gap: 1rem;
+
+        img {
+          width: 1.4rem;
+          aspect-ratio: 1.05;
+          cursor: pointer;
+        }
+      }
+    }
+    .testimonial-2 {
+      grid-row: span 2;
+
+      .testimonial-heading {
+        .testimonial-attestant {
+          div {
+            font-size: 0.9rem;
+            font-family: var(--font-heading);
+          }
+        }
+      }
+    }
+  }
+}
