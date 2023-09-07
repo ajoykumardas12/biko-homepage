@@ -1,0 +1,56 @@
+.features {
+  padding: 6rem 3rem;
+  color: var(--dark);
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    .feature {
+      .feature-heading {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .feature-carbon-fiber {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    .carbon-fiber-text-content {
+      width: 110%;
+      padding-right: 5rem;
+      margin-right: 3rem;
+      border-right: 1px solid var(--light-gray);
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-size: 3.5rem;
+        font-weight: 500;
+      }
+      p {
+        margin: auto 4rem 2rem 0;
+      }
+      .pre-order-button {
+        width: max-content;
+        color: var(--light-gray);
+        background: var(--dark);
+        font-weight: 600;
+      }
+    }
+    .carbon-fiber-image {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-image: url("../../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

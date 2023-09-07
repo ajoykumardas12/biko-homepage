@@ -2,8 +2,13 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -36,6 +41,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   list-style: none;
 }
@@ -55,7 +65,7 @@ ul {
   --font-text: "League Spartan", sans-serif;
 }
 
-.horizontal-seperator {
+.horizontal-separator {
   width: 100%;
   height: 1px;
   background: var(--dark-gray);
@@ -69,7 +79,7 @@ ul {
   background-image: url(../../assets/images/josh-nuttall-eTrHMJwI5ro-unsplash.png);
   background-size: cover;
   background-position: center;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   align-items: end;
 }
@@ -79,7 +89,7 @@ ul {
   font-family: var(--font-heading);
   font-weight: 400;
 }
-.hero-section .hero-texts .horizontal-seperator {
+.hero-section .hero-texts .horizontal-separator {
   margin: 1rem 0 2rem;
 }
 .hero-section .hero-texts .hero-para {
@@ -101,7 +111,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 header .contact,
 header nav {
@@ -123,4 +133,55 @@ header .contact,
 header .brand,
 header ul li {
   cursor: pointer;
+}
+
+.features {
+  padding: 6rem 3rem;
+  color: var(--dark);
+}
+.features .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.features .features-grid .feature .feature-heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.features .features-grid .feature p {
+  margin-top: 1rem;
+}
+.features .feature-carbon-fiber {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.features .feature-carbon-fiber .carbon-fiber-text-content {
+  width: 110%;
+  padding-right: 5rem;
+  margin-right: 3rem;
+  border-right: 1px solid var(--light-gray);
+  display: flex;
+  flex-direction: column;
+}
+.features .feature-carbon-fiber .carbon-fiber-text-content h4 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.features .feature-carbon-fiber .carbon-fiber-text-content p {
+  margin: auto 4rem 2rem 0;
+}
+.features .feature-carbon-fiber .carbon-fiber-text-content .pre-order-button {
+  width: max-content;
+  color: var(--light-gray);
+  background: var(--dark);
+  font-weight: 600;
+}
+.features .feature-carbon-fiber .carbon-fiber-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url("../../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");
+  background-size: cover;
+  background-position: center;
 }
