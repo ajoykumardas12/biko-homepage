@@ -1,0 +1,21 @@
+.showcase-images-section-1 {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  .showcase-image {
+    max-width: 100%;
+  }
+  .showcase-image-3 {
+    grid-column: span 2;
+  }
+}
+
+.showcase-images-section-2 {
+  padding: 3rem;
+
+  .showcase-image-4 {
+    max-width: 100%;
+  }
+}
