@@ -1,0 +1,31 @@
+header {
+  background: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  .contact,
+  nav {
+    color: var(--light-gray);
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .brand {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  .contact,
+  .brand,
+  ul li {
+    cursor: pointer;
+  }
+}

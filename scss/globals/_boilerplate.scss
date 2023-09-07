@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 html {
   box-sizing: border-box;
 }
@@ -6,6 +8,19 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+header {
+  height: u.$header-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 p {
@@ -21,4 +36,8 @@ button {
   border: none;
   font-size: 1em;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }

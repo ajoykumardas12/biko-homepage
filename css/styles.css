@@ -8,6 +8,19 @@ html {
   padding: 0;
 }
 
+header {
+  height: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
 p {
   font-size: 1.2rem;
   font-family: var(--font-text);
@@ -21,6 +34,10 @@ button {
   border: none;
   font-size: 1em;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }
 
 :root {
@@ -46,8 +63,8 @@ button {
 
 .hero-section {
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
+  height: calc(100vh - 4rem);
+  height: calc(100dvh - 4rem);
   color: var(--black);
   background-image: url(../../assets/images/josh-nuttall-eTrHMJwI5ro-unsplash.png);
   background-size: cover;
@@ -63,7 +80,7 @@ button {
   font-weight: 400;
 }
 .hero-section .hero-texts .horizontal-seperator {
-  margin: 1rem 0 2.5rem;
+  margin: 1rem 0 2rem;
 }
 .hero-section .hero-texts .hero-para {
   display: flex;
@@ -77,4 +94,33 @@ button {
   margin: auto 3rem auto auto;
   color: var(--light-gray);
   background: var(--dark-gray);
+}
+
+header {
+  background: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+header .contact,
+header nav {
+  color: var(--light-gray);
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+header .brand {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 600;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+header .contact,
+header .brand,
+header ul li {
+  cursor: pointer;
 }
