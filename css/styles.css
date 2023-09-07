@@ -2,11 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-html,
-body {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -277,4 +272,51 @@ header ul li {
 .testimonials-section .testimonials .testimonial-2 .testimonial-heading .testimonial-attestant div {
   font-size: 0.9rem;
   font-family: var(--font-heading);
+}
+
+.detailed-features-section {
+  padding: 7rem 3rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.detailed-features-section .detailed-features-intro {
+  grid-column: span 2;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.detailed-features-section .detailed-features-intro h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+.detailed-features-section .detailed-features-intro p {
+  margin-top: auto;
+  padding-right: 4rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.detailed-features-section .detailed-feature {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-left: 1px solid var(--light-gray);
+}
+.detailed-features-section .detailed-feature h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.detailed-features-section .detailed-feature .detailed-feature-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.detailed-features-section .detailed-feature .detailed-feature-image {
+  margin-top: 10rem;
+  width: 5rem;
+}
+.detailed-features-section .detailed-feature p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
 }

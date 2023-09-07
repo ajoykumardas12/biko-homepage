@@ -1,0 +1,49 @@
+.detailed-features-section {
+  padding: 7rem 3rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+
+  .detailed-features-intro {
+    grid-column: span 2;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 100%;
+    }
+    p {
+      margin-top: auto;
+      padding-right: 4rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+  }
+  .detailed-feature {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    border-left: 1px solid var(--light-gray);
+
+    h5 {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .detailed-feature-heading {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .detailed-feature-image {
+      margin-top: 10rem;
+      width: 5rem;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+  }
+}
