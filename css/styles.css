@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -78,6 +83,10 @@ ul {
   padding: 3rem;
   display: flex;
   align-items: end;
+  position: relative;
+}
+.hero-section .hero-texts {
+  z-index: 2;
 }
 .hero-section .hero-texts .hero-heading {
   font-size: 5rem;
@@ -101,6 +110,16 @@ ul {
   font-size: 0.95rem;
   color: var(--light-gray);
   background: var(--gray-black);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, transparent 70%, var(--dark));
 }
 
 header {
@@ -196,11 +215,13 @@ header ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .testimonials-section .testimonials-top .testimonials-heading {
   font-size: 4rem;
   font-weight: 400;
   color: var(--white);
+  z-index: 2;
 }
 .testimonials-section .testimonials-top p {
   margin-top: 2.5rem;
@@ -214,6 +235,15 @@ header ul li {
   color: var(--light-gray);
   background: var(--gray-black);
   outline: 1px solid var(--dark-gray);
+}
+.testimonials-section .testimonials-top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, var(--dark), transparent 20%, transparent 80%, var(--dark));
 }
 .testimonials-section .testimonials {
   padding: 0 3rem 7rem;
