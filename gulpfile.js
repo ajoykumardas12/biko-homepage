@@ -7,7 +7,7 @@ function buildDistStyles() {
 }
 
 function watchTask() {
-  watch(["scss/styles.scss"], buildDistStyles);
+  watch(["scss/**/*.scss"], buildDistStyles);
 }
 
 exports.default = series(buildDistStyles, watchTask);
