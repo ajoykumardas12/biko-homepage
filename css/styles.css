@@ -453,3 +453,34 @@ header ul li {
   padding: 0 3rem;
   justify-content: center;
 }
+
+.packaging-section {
+  margin: 8rem auto;
+  padding: 0 3rem;
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.packaging-section .packaging-heading {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.packaging-section p {
+  text-align: center;
+}
+.packaging-section .packaging-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.packaging-section .packaging-buttons .discover-more-button {
+  background: var(--light-gray);
+}
+.packaging-section .packaging-buttons .pre-order-button {
+  width: max-content;
+  color: var(--light-gray);
+  background: var(--dark);
+}

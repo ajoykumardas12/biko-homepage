@@ -1,0 +1,32 @@
+.packaging-section {
+  margin: 8rem auto;
+  padding: 0 3rem;
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  .packaging-heading {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  p {
+    text-align: center;
+  }
+  .packaging-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .discover-more-button {
+      background: var(--light-gray);
+    }
+    .pre-order-button {
+      width: max-content;
+      color: var(--light-gray);
+      background: var(--dark);
+    }
+  }
+}
