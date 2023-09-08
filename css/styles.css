@@ -431,6 +431,7 @@ header ul li {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 0.8rem;
 }
 .biko-details-section .biko-details-group .biko-details-subgroup div {
   display: flex;
@@ -451,11 +452,11 @@ header ul li {
 }
 .biko-details-section .biko-details-group:is(:last-child) {
   padding: 0 3rem;
-  justify-content: center;
+  align-self: center;
 }
 
 .packaging-section {
-  margin: 8rem auto;
+  margin: 7rem auto;
   padding: 0 3rem;
   max-width: 33rem;
   display: flex;
@@ -483,4 +484,49 @@ header ul li {
   width: max-content;
   color: var(--light-gray);
   background: var(--dark);
+}
+
+footer {
+  margin: 0 3rem 3rem;
+  padding: 2.5rem 3rem;
+  background: var(--light);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-heading);
+}
+footer .footer-content .social-links {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer-content .social-links .social {
+  cursor: pointer;
+}
+footer .footer-content .social-links .social img {
+  width: 2rem;
+}
+footer .footer-content .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-weight: 500;
+}
+footer .footer-content .link {
+  cursor: pointer;
+}
+footer .acknowledgements {
+  display: flex;
+  justify-content: space-between;
+}
+footer .acknowledgements p {
+  font-size: 1rem;
 }

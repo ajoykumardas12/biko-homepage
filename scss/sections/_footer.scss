@@ -1,0 +1,50 @@
+footer {
+  margin: 0 3rem 3rem;
+  padding: 2.5rem 3rem;
+  background: var(--light);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-heading);
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+
+      .social {
+        cursor: pointer;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      font-weight: 500;
+    }
+
+    .link {
+      cursor: pointer;
+    }
+  }
+  .acknowledgements {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1rem;
+    }
+  }
+}
