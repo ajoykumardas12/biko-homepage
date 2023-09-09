@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 header {
   background: var(--black);
   display: flex;
@@ -9,7 +11,7 @@ header {
     color: var(--light-gray);
     font-family: var(--font-text);
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   .brand {
     color: var(--white);
@@ -27,5 +29,20 @@ header {
   .brand,
   ul li {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: u.$sm) {
+    padding: 0 2rem;
+    .contact {
+      display: none;
+    }
+    .brand {
+      font-size: 1.8rem;
+    }
+    .nav {
+      ul {
+        font-size: 0.9rem;
+      }
+    }
   }
 }

@@ -5,6 +5,7 @@ html {
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -138,7 +139,7 @@ header nav {
   color: var(--light-gray);
   font-family: var(--font-text);
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 header .brand {
   color: var(--white);
@@ -153,6 +154,20 @@ header .contact,
 header .brand,
 header ul li {
   cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+  header {
+    padding: 0 2rem;
+  }
+  header .contact {
+    display: none;
+  }
+  header .brand {
+    font-size: 1.8rem;
+  }
+  header .nav ul {
+    font-size: 0.9rem;
+  }
 }
 
 .features {
