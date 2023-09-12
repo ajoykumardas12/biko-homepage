@@ -31,7 +31,7 @@ header {
     cursor: pointer;
   }
 
-  @media screen and (max-width: u.$sm) {
+  @include u.breakpoint-sm {
     padding: 0 2rem;
     .contact {
       display: none;
