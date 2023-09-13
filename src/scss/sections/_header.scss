@@ -5,7 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.5rem;
+  padding: 0 u.$px-sm;
   .contact,
   nav {
     color: var(--light-gray);
@@ -32,7 +32,7 @@ header {
   }
 
   @include u.breakpoint-sm {
-    padding: 0 2rem;
+    padding: 0 u.$px-xs;
     .contact {
       display: none;
     }

@@ -148,6 +148,7 @@ ul {
   .hero-section .hero-texts .hero-para {
     flex-direction: column;
     gap: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 640px) {
@@ -202,7 +203,7 @@ header ul li {
 }
 @media screen and (max-width: 640px) {
   header {
-    padding: 0 2rem;
+    padding: 0 1.8rem;
   }
   header .contact {
     display: none;
@@ -216,40 +217,96 @@ header ul li {
 }
 
 .features {
-  padding: 6rem 3rem;
+  padding: 6rem 2.5rem;
   color: var(--dark);
+}
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .features {
+    padding: 3rem 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 3rem 1.8rem;
+  }
 }
 .features .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
+@media screen and (max-width: 768px) {
+  .features .features-grid {
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .features .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
 .features .features-grid .feature .feature-heading {
   font-size: 3rem;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  .features .features-grid .feature .feature-heading {
+    font-size: 2rem;
+  }
+}
 .features .features-grid .feature p {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+}
+@media screen and (max-width: 640px) {
+  .features .features-grid .feature p {
+    margin-top: 0.4rem;
+  }
 }
 .features .feature-carbon-fiber {
+  width: 100%;
   margin-top: 10rem;
   display: flex;
   justify-content: space-between;
+  gap: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .features .feature-carbon-fiber {
+    margin-top: 7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features .feature-carbon-fiber {
+    margin-top: 5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .features .feature-carbon-fiber {
+    margin-top: 4rem;
+  }
 }
 .features .feature-carbon-fiber .carbon-fiber-text-content {
-  width: 110%;
-  padding-right: 5rem;
-  margin-right: 3rem;
+  flex-grow: 1;
+  padding-right: 4rem;
   border-right: 1px solid var(--light-gray);
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 .features .feature-carbon-fiber .carbon-fiber-text-content h4 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5.5vw, 3.5rem);
   font-weight: 500;
 }
 .features .feature-carbon-fiber .carbon-fiber-text-content p {
-  margin: auto 4rem 2rem 0;
+  margin: auto 3rem 0 0;
 }
 .features .feature-carbon-fiber .carbon-fiber-text-content .pre-order-button {
   width: max-content;
@@ -257,8 +314,26 @@ header ul li {
   background: var(--dark);
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .features .feature-carbon-fiber .carbon-fiber-text-content {
+    padding-right: 0;
+    border-right: none;
+    align-items: center;
+    text-align: center;
+  }
+  .features .feature-carbon-fiber .carbon-fiber-text-content p {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .features .feature-carbon-fiber .carbon-fiber-text-content {
+    gap: 1.5rem;
+  }
+}
 .features .feature-carbon-fiber .carbon-fiber-image {
   width: 100%;
+  min-width: 18rem;
+  max-width: 30rem;
   aspect-ratio: 1;
   border-radius: 50%;
   background-image: url("../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");

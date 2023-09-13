@@ -1,41 +1,88 @@
+@use "../utils" as u;
+
 .features {
-  padding: 6rem 3rem;
+  padding: 6rem u.$px-sm;
   color: var(--dark);
+
+  @include u.breakpoint-md {
+    padding: u.$px-md;
+  }
+
+  @include u.breakpoint-sm {
+    padding: 3rem u.$px-sm;
+  }
+
+  @include u.breakpoint-md {
+    padding: 3rem u.$px-xs;
+  }
 
   .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+
+    @include u.breakpoint-md {
+      gap: 2.5rem;
+    }
+
+    @include u.breakpoint-sm {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
     .feature {
       .feature-heading {
         font-size: 3rem;
         font-weight: 500;
+
+        @include u.breakpoint-md {
+          font-size: 2rem;
+        }
       }
       p {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
+
+        @include u.breakpoint-sm {
+          margin-top: 0.4rem;
+        }
       }
     }
   }
 
   .feature-carbon-fiber {
+    width: 100%;
     margin-top: 10rem;
     display: flex;
     justify-content: space-between;
+    gap: 3rem;
+
+    @include u.breakpoint-lg {
+      margin-top: 7rem;
+    }
+    @include u.breakpoint-md {
+      margin-top: 5rem;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+    }
+    @include u.breakpoint-sm {
+      margin-top: 4rem;
+    }
 
     .carbon-fiber-text-content {
-      width: 110%;
-      padding-right: 5rem;
-      margin-right: 3rem;
+      flex-grow: 1;
+      padding-right: 4rem;
       border-right: 1px solid var(--light-gray);
       display: flex;
       flex-direction: column;
+      gap: 2rem;
 
       h4 {
-        font-size: 3.5rem;
+        font-size: clamp(2rem, 5.5vw, 3.5rem);
         font-weight: 500;
       }
       p {
-        margin: auto 4rem 2rem 0;
+        margin: auto 3rem 0 0;
       }
       .pre-order-button {
         width: max-content;
@@ -43,9 +90,27 @@
         background: var(--dark);
         font-weight: 600;
       }
+
+      @include u.breakpoint-md {
+        padding-right: 0;
+        border-right: none;
+        align-items: center;
+        text-align: center;
+
+        h4 {
+        }
+        p {
+          margin-right: 0;
+        }
+      }
+      @include u.breakpoint-sm {
+        gap: 1.5rem;
+      }
     }
     .carbon-fiber-image {
       width: 100%;
+      min-width: 18rem;
+      max-width: 30rem;
       aspect-ratio: 1;
       border-radius: 50%;
       background-image: url("../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");
