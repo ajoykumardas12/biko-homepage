@@ -82,7 +82,7 @@ ul {
   height: calc(100vh - 4rem);
   height: calc(100dvh - 4rem);
   color: var(--black);
-  background-image: url(../../assets/images/josh-nuttall-eTrHMJwI5ro-unsplash.png);
+  background-image: url(../assets/images/josh-nuttall-eTrHMJwI5ro-unsplash.png);
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@ header ul li {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-image: url("../../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");
+  background-image: url("../assets/images/josh-nuttall-zkVi57UYHIQ-unsplash.png");
   background-size: cover;
   background-position: center;
 }
@@ -273,7 +273,7 @@ header ul li {
 }
 .testimonials-section .testimonials-top {
   padding: 7rem 3rem 20rem;
-  background-image: url("../../assets/images/josh-nuttall-XVTWFHcNIko-unsplash.png");
+  background-image: url("../assets/images/josh-nuttall-XVTWFHcNIko-unsplash.png");
   background-size: cover;
   background-position: center;
   display: flex;
