@@ -1,3 +1,5 @@
+@use "../utils/" as u;
+
 .showcase-images-section-1 {
   padding: 3rem;
   display: grid;
@@ -17,5 +19,37 @@
 
   .showcase-image-4 {
     max-width: 100%;
+  }
+}
+
+@include u.breakpoint-md {
+  .showcase-images-section-1 {
+    padding: u.$px-md;
+  }
+  .showcase-images-section-2 {
+    padding: 3rem u.$px-md 5rem;
+  }
+}
+
+@include u.breakpoint-sm {
+  .showcase-images-section-1 {
+    padding: u.$px-sm;
+  }
+  .showcase-images-section-2 {
+    padding: 3rem u.$px-sm 4rem;
+  }
+}
+
+@include u.breakpoint-xs {
+  .showcase-images-section-1 {
+    padding: u.$px-xs;
+    grid-template-columns: repeat(1, 1fr);
+
+    .showcase-image-3 {
+      grid-column: span 1;
+    }
+  }
+  .showcase-images-section-2 {
+    padding: 3rem u.$px-xs 4rem;
   }
 }

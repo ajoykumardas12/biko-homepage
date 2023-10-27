@@ -616,6 +616,7 @@ header ul li {
   }
   .detailed-features-section .detailed-feature p {
     grid-column: -12/span 11;
+    margin-top: 0.5rem;
   }
 }
 .showcase-images-section-1 {
@@ -638,6 +639,34 @@ header ul li {
   max-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .showcase-images-section-1 {
+    padding: 3rem;
+  }
+  .showcase-images-section-2 {
+    padding: 3rem 3rem 5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .showcase-images-section-1 {
+    padding: 2.5rem;
+  }
+  .showcase-images-section-2 {
+    padding: 3rem 2.5rem 4rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .showcase-images-section-1 {
+    padding: 1.8rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .showcase-images-section-1 .showcase-image-3 {
+    grid-column: span 1;
+  }
+  .showcase-images-section-2 {
+    padding: 3rem 1.8rem 4rem;
+  }
+}
 .faq-section {
   padding: 8rem 3rem 3rem;
 }
