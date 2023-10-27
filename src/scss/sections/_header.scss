@@ -39,10 +39,16 @@ header {
     .brand {
       font-size: 1.8rem;
     }
-    .nav {
+    nav {
       ul {
         font-size: 0.9rem;
       }
+    }
+  }
+  @include u.breakpoint-xs {
+    justify-content: center;
+    nav {
+      display: none;
     }
   }
 }

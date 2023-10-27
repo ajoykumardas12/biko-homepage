@@ -211,8 +211,16 @@ header ul li {
   header .brand {
     font-size: 1.8rem;
   }
-  header .nav ul {
+  header nav ul {
     font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  header {
+    justify-content: center;
+  }
+  header nav {
+    display: none;
   }
 }
 
