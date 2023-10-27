@@ -543,6 +543,81 @@ header ul li {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1024px) {
+  .detailed-features-section {
+    padding: 7rem 3rem 5rem;
+  }
+  .detailed-features-section .detailed-features-intro {
+    padding-right: 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .detailed-features-section {
+    padding: 7rem 3rem 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .detailed-features-section .detailed-features-intro {
+    grid-column: span 3;
+  }
+  .detailed-features-section .detailed-features-intro p {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .detailed-features-section {
+    padding: 6rem 2.5rem 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .detailed-features-section .detailed-features-intro {
+    grid-column: span 1;
+  }
+  .detailed-features-section .detailed-features-intro p {
+    margin-top: 1rem;
+  }
+  .detailed-features-section .detailed-feature {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-left: 0;
+  }
+  .detailed-features-section .detailed-feature .detailed-feature-heading {
+    grid-column: span 3;
+    font-size: 1.2rem;
+  }
+  .detailed-features-section .detailed-feature .detailed-feature-image {
+    grid-column: span 2;
+    margin-top: 0;
+    width: 3rem;
+  }
+  .detailed-features-section .detailed-feature p {
+    grid-column: span 6;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .detailed-features-section {
+    padding: 5rem 1.8rem 3rem;
+  }
+  .detailed-features-section .detailed-feature {
+    grid-template-rows: repeat(2, auto);
+  }
+  .detailed-features-section .detailed-feature h5 {
+    display: flex;
+    align-items: center;
+  }
+  .detailed-features-section .detailed-feature .detailed-feature-heading {
+    grid-column: span 9;
+    display: flex;
+    align-items: center;
+  }
+  .detailed-features-section .detailed-feature .detailed-feature-image {
+    grid-column: span 2;
+  }
+  .detailed-features-section .detailed-feature p {
+    grid-column: -12/span 11;
+  }
+}
 .showcase-images-section-1 {
   padding: 3rem;
   display: grid;

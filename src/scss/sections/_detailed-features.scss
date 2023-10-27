@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .detailed-features-section {
   padding: 7rem 3rem 5rem;
   display: grid;
@@ -43,6 +45,89 @@
       margin-top: 2rem;
       font-size: 1.1rem;
       font-weight: 300;
+    }
+  }
+}
+
+@include u.breakpoint-lg {
+  .detailed-features-section {
+    padding: 7rem u.$px-md 5rem;
+    .detailed-features-intro {
+      padding-right: 0rem;
+    }
+  }
+}
+
+@include u.breakpoint-md {
+  .detailed-features-section {
+    padding: 7rem u.$px-md 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    .detailed-features-intro {
+      grid-column: span 3;
+      p {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@include u.breakpoint-sm {
+  .detailed-features-section {
+    padding: 6rem u.$px-sm 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    .detailed-features-intro {
+      grid-column: span 1;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .detailed-feature {
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      border-left: 0;
+
+      .detailed-feature-heading {
+        grid-column: span 3;
+        font-size: 1.2rem;
+      }
+      .detailed-feature-image {
+        grid-column: span 2;
+        margin-top: 0;
+        width: 3rem;
+      }
+      p {
+        grid-column: span 6;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@include u.breakpoint-xs {
+  .detailed-features-section {
+    padding: 5rem u.$px-xs 3rem;
+
+    .detailed-feature {
+      grid-template-rows: repeat(2, auto);
+
+      h5 {
+        display: flex;
+        align-items: center;
+      }
+      .detailed-feature-heading {
+        grid-column: span 9;
+        display: flex;
+        align-items: center;
+      }
+      .detailed-feature-image {
+        grid-column: span 2;
+      }
+      p {
+        grid-column: -12 / span 11;
+      }
     }
   }
 }
