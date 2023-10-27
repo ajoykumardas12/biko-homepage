@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .testimonials-section {
   background: var(--dark);
   border-radius: 2rem;
@@ -13,17 +15,39 @@
     align-items: center;
     position: relative;
 
+    @include u.breakpoint-md {
+      padding: 7rem u.$px-md 16rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include u.breakpoint-sm {
+      padding: 6rem u.$px-sm 14rem;
+    }
+
+    @include u.breakpoint-xs {
+      padding: 5rem u.$px-xs 10rem;
+    }
+
     .testimonials-heading {
       font-size: 4rem;
       font-weight: 400;
       color: var(--white);
       z-index: 2;
+
+      @include u.breakpoint-sm {
+        font-size: 3rem;
+      }
+
+      @include u.breakpoint-xs {
+        font-size: 2.5rem;
+      }
     }
     p {
       margin-top: 2.5rem;
       max-width: 24rem;
       text-align: center;
       color: var(--light-gray);
+      z-index: 2;
     }
     .button-testimonials {
       margin-top: 1.5rem;
@@ -31,6 +55,7 @@
       color: var(--light-gray);
       background: var(--gray-black);
       outline: 1px solid var(--dark-gray);
+      z-index: 2;
     }
   }
   .testimonials-top::before {
@@ -54,6 +79,21 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
+
+    @include u.breakpoint-md {
+      padding: 0 u.$px-md 7rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include u.breakpoint-sm {
+      padding: 0 u.$px-sm 6rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+
+    @include u.breakpoint-xs {
+      padding: 0 u.$px-xs 5rem;
+    }
 
     .testimonial {
       background: var(--testimonial-bg);

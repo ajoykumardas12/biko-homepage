@@ -238,7 +238,7 @@ header ul li {
     padding: 3rem 2.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
   .features {
     padding: 3rem 1.8rem;
   }
@@ -364,17 +364,44 @@ header ul li {
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .testimonials-section .testimonials-top {
+    padding: 7rem 3rem 16rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .testimonials-section .testimonials-top {
+    padding: 6rem 2.5rem 14rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonials-section .testimonials-top {
+    padding: 5rem 1.8rem 10rem;
+  }
+}
 .testimonials-section .testimonials-top .testimonials-heading {
   font-size: 4rem;
   font-weight: 400;
   color: var(--white);
   z-index: 2;
 }
+@media screen and (max-width: 640px) {
+  .testimonials-section .testimonials-top .testimonials-heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonials-section .testimonials-top .testimonials-heading {
+    font-size: 2.5rem;
+  }
+}
 .testimonials-section .testimonials-top p {
   margin-top: 2.5rem;
   max-width: 24rem;
   text-align: center;
   color: var(--light-gray);
+  z-index: 2;
 }
 .testimonials-section .testimonials-top .button-testimonials {
   margin-top: 1.5rem;
@@ -382,6 +409,7 @@ header ul li {
   color: var(--light-gray);
   background: var(--gray-black);
   outline: 1px solid var(--dark-gray);
+  z-index: 2;
 }
 .testimonials-section .testimonials-top::before {
   content: "";
@@ -398,6 +426,24 @@ header ul li {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .testimonials-section .testimonials {
+    padding: 0 3rem 7rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .testimonials-section .testimonials {
+    padding: 0 2.5rem 6rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonials-section .testimonials {
+    padding: 0 1.8rem 5rem;
+  }
 }
 .testimonials-section .testimonials .testimonial {
   background: var(--testimonial-bg);
